@@ -1,0 +1,84 @@
+ĐỀ KIỂM TRA GIỮA KỲ
+ HỌC PHẦN
+ ĐIỆN TOÁN ĐÁM MÂY
+I. MỤC TIÊU
+Kiểm tra kỹ năng khởi tạo hạ tầng (IaaS), triển khai ứng dụng thực tế và đóng gói giải pháp để di trú hệ thống (Cloud Migration).
+II. NỘI DUNG YÊU CẦU
+Bước 1: Khởi tạo hạ tầng máy ảo
+Sử dụng nền tảng ảo hóa đã học (
+Proxmox VE
+ hoặc 
+KVM
+) để tạo 01 máy ảo (Virtual Machine).
+Cấu hình yêu cầu:
+ - OS: Ubuntu Server (hoặc Alpine Linux để tối ưu dung lượng).
+CPU: 01 Core | RAM: Tối thiểu 512MB | Disk: 5GB - 10GB.
+Network: Chế độ Bridge hoặc NAT (đảm bảo máy ảo ra được Internet và máy thật truy cập được vào IP máy ảo).
+Đặt tên máy ảo theo cú pháp: HoTen_MaSV_GK (Ví dụ: NguyenVanA_
+0123456789
+_GK).
+Bước 2: Triển khai ứng dụng đồ án
+Sinh viên lựa chọn một đồ án hoặc bài tập lớn đã thực hiện trong các học phần khác để triển khai lên máy ảo vừa tạo.
+Cài đặt môi trường:
+ Cài đặt đầy đủ các dịch vụ cần thiết (Web Server, Database, Runtime...) để ứng dụng hoạt động.
+Khuyến khích:
+ Sử dụng 
+Docker & Docker Compose
+ để triển khai nhanh và chuẩn hóa môi trường.
+Cấu hình truy cập:
+ Đảm bảo khi nhập địa chỉ IP của máy ảo trên trình duyệt máy thật, ứng dụng phải hiển thị đúng giao diện đồ án.
+Dữ liệu:
+ Phải có dữ liệu demo thực tế trong ứng dụng.
+Bước 3: Tối ưu hóa và Đóng gói
+Dọn dẹp hệ thống:
+ Xóa các file cài đặt thừa, xóa lịch sử lệnh (history -c) để giảm dung lượng.
+Đóng gói:
+ Thực hiện lệnh 
+Export
+ máy ảo hoặc sao lưu (
+Backup
+) thành 01 file định dạng duy nhất (Ví dụ: .ova, .qcow2 hoặc .vma).
+Yêu cầu:
+ File image sau khi đóng gói phải có khả năng mang sang máy tính của giảng viên và khởi chạy được ngay mà không cần cấu hình lại mã nguồn.
+III. HƯỚNG DẪN NỘP BÀI
+Sinh viên nộp một thư mục nén (.zip hoặc .rar) đặt tên theo HoTen_MaSV, bên trong bao gồm:
+File Image máy ảo:
+ (Sản phẩm từ Bước 3).
+Tệp báo cáo (PDF):
+ Ngắn gọn (1-2 trang) gồm:
+Địa chỉ IP máy ảo.
+Các lệnh chính đã sử dụng để cài đặt ứng dụng.
+Ảnh chụp màn hình ứng dụng đang chạy trên trình duyệt (có hiển thị thanh địa chỉ IP).
+IV. TIÊU CHÍ CHẤM ĐIỂM
+<w:tblPr><w:tblStyle w:val="TableGrid"/><w:tblW w:w="0" w:type="auto"/><w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/></w:tblPr><w:tblGrid><w:gridCol w:w="846"/><w:gridCol w:w="2410"/><w:gridCol w:w="4961"/><w:gridCol w:w="1133"/></w:tblGrid><w:tr w:rsidR="00646AFB" w:rsidRPr="00646AFB" w14:paraId="4A99C281" w14:textId="77777777" w:rsidTr="00646AFB"><w:tc><w:tcPr><w:tcW w:w="846" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="6EE0ABFF" w14:textId="5A021513" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>STT
+<w:tcPr><w:tcW w:w="2410" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="3C333B2A" w14:textId="1CEF6115" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>Nội dung kiểm tra
+<w:tcPr><w:tcW w:w="4961" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr><w:p w14:paraId="147198E5" w14:textId="266C1AAD" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>Tiêu chí chi tiết
+<w:tcPr><w:tcW w:w="1133" w:type="dxa"/></w:tcPr><w:p w14:paraId="65034C7A" w14:textId="1C483398" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>Điểm
+<w:tc><w:tcPr><w:tcW w:w="846" w:type="dxa"/></w:tcPr><w:p w14:paraId="07C7B512" w14:textId="18F01268" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>1
+<w:tcPr><w:tcW w:w="2410" w:type="dxa"/></w:tcPr><w:p w14:paraId="137A1DBA" w14:textId="4CFEDE7F" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>Khởi tạo hạ tầng
+<w:tcPr><w:tcW w:w="4961" w:type="dxa"/></w:tcPr><w:p w14:paraId="078EDD9E" w14:textId="77777777" w:rsidR="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>- Máy ảo khởi chạy đúng cấu hình yêu cầu (CPU, RAM, Disk).
+- Đặt tên máy ảo đúng cú pháp quy định.
+<w:tcPr><w:tcW w:w="1133" w:type="dxa"/></w:tcPr><w:p w14:paraId="156BD893" w14:textId="7160314A" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>2.5
+<w:tc><w:tcPr><w:tcW w:w="846" w:type="dxa"/></w:tcPr><w:p w14:paraId="39587335" w14:textId="124FEA4F" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>2
+<w:tcPr><w:tcW w:w="2410" w:type="dxa"/></w:tcPr><w:p w14:paraId="11489B50" w14:textId="1EDC8715" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>Cấu hình mạng
+<w:tcPr><w:tcW w:w="4961" w:type="dxa"/></w:tcPr><w:p w14:paraId="29082767" w14:textId="77777777" w:rsidR="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>- Máy ảo thông suốt Internet (Ping được domain bên ngoài).
+- Máy thật SSH hoặc truy cập được vào IP máy ảo qua trình duyệt.
+<w:tcPr><w:tcW w:w="1133" w:type="dxa"/></w:tcPr><w:p w14:paraId="6F67DA44" w14:textId="105AB4A5" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>1.5
+<w:tc><w:tcPr><w:tcW w:w="846" w:type="dxa"/></w:tcPr><w:p w14:paraId="2DA2B6C1" w14:textId="02D0D2B2" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>3
+<w:tcPr><w:tcW w:w="2410" w:type="dxa"/></w:tcPr><w:p w14:paraId="5649DAA9" w14:textId="202FA559" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>Triển khai ứng dụng
+<w:tcPr><w:tcW w:w="4961" w:type="dxa"/></w:tcPr><w:p w14:paraId="793D1DFC" w14:textId="77777777" w:rsidR="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>- Cài đặt thành công môi trường (Web server, DB...).
+- Ứng dụng hoạt động ổn định, có dữ liệu demo thực tế.
+<w:tcPr><w:tcW w:w="1133" w:type="dxa"/></w:tcPr><w:p w14:paraId="10146103" w14:textId="5F1F5523" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>4.0
+<w:tc><w:tcPr><w:tcW w:w="846" w:type="dxa"/></w:tcPr><w:p w14:paraId="6FF64325" w14:textId="5012199F" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>4
+<w:tcPr><w:tcW w:w="2410" w:type="dxa"/></w:tcPr><w:p w14:paraId="557AC592" w14:textId="616DD6E8" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>Đóng gói & Nộp bài
+<w:tcPr><w:tcW w:w="4961" w:type="dxa"/></w:tcPr><w:p w14:paraId="78F107E9" w14:textId="77777777" w:rsidR="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>- Xuất file image đúng định dạng (.qcow2, .ova, .vma...).
+- File nén gọn gàng, báo cáo PDF đầy đủ minh chứng.
+<w:tcPr><w:tcW w:w="1133" w:type="dxa"/></w:tcPr><w:p w14:paraId="5C09B3B7" w14:textId="4D1E2228" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>2.0
+<w:tc><w:tcPr><w:tcW w:w="846" w:type="dxa"/></w:tcPr><w:p w14:paraId="717D9F6F" w14:textId="18113F8F" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:lastRenderedPageBreak/><w:t>Cộng
+<w:tcPr><w:tcW w:w="2410" w:type="dxa"/></w:tcPr><w:p w14:paraId="7B5A636D" w14:textId="68C0216C" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>Điểm thưởng
+<w:tcPr><w:tcW w:w="4961" w:type="dxa"/></w:tcPr><w:p w14:paraId="35709D8C" w14:textId="77777777" w:rsidR="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>- Sử dụng Docker/Docker Compose để triển khai ứng dụng.
+- File image tối ưu dung lượng (đã dọn dẹp log/cache).
+<w:tcPr><w:tcW w:w="1133" w:type="dxa"/></w:tcPr><w:p w14:paraId="3FCB39E1" w14:textId="7AA19324" w:rsidR="00646AFB" w:rsidRPr="00646AFB" w:rsidRDefault="00646AFB" w:rsidP="00646AFB"><w:pPr><w:jc w:val="center"/><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:b/><w:bCs/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr></w:pPr><w:r w:rsidRPr="00646AFB"><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:sz w:val="28"/><w:szCs w:val="28"/></w:rPr><w:t>+0.5
+Ghi chú cho sinh viên:
+ 
+Mọi hành vi sao chép file Image của nhau sẽ bị tính 0 điểm cho cả hai bên. Giảng viên sẽ kiểm tra Machine ID và lịch sử hệ thống của từng máy ảo.

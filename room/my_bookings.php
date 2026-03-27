@@ -4,7 +4,7 @@ require_once __DIR__ . '/../config/db.php';
 
 $user_id = $_SESSION['user_id'] ?? 0;
 if (!$user_id) {
-    header('Location: ../Auth/login.php');
+    header('Location: ../auth/login.php');
     exit;
 }
 

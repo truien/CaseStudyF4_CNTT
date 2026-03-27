@@ -63,7 +63,7 @@ session_start();
     </div>
 
     <!-- Thêm tham chiếu đến file JavaScript chung -->
-    <script src="/Assets/admin/js/main.js"></script>
+    <script src="/assets/admin/js/main.js"></script>
 </body>
 
 </html>

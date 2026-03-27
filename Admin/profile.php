@@ -4,7 +4,7 @@ require_once '../config/db.php';
 
 // Kiểm tra đăng nhập với quyền admin
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 1) {
-    header('Location: ../Auth/login.php?message=Bạn cần đăng nhập với tài khoản admin');
+    header('Location: ../auth/login.php?message=Bạn cần đăng nhập với tài khoản admin');
     exit();
 }
 
@@ -217,7 +217,7 @@ include_once '../components/admin_header.php';
                     <div class="change-avatar" onclick="document.getElementById('avatar-upload').click();">
                         <i class="fas fa-camera"></i>
                     </div>
-                    <form id="avatar-form" action="../Auth/edit_profile.php" method="post" enctype="multipart/form-data">
+                    <form id="avatar-form" action="../auth/edit_profile.php" method="post" enctype="multipart/form-data">
                         <input type="file" name="avatar" id="avatar-upload" class="custom-file-upload" onchange="document.getElementById('avatar-form').submit();">
                     </form>
                     <div class="ml-3">
@@ -245,10 +245,10 @@ include_once '../components/admin_header.php';
                     </ul>
 
                     <div class="action-buttons">
-                        <a href="../Auth/edit_profile.php" class="btn btn-primary">
+                        <a href="../auth/edit_profile.php" class="btn btn-primary">
                             <i class="fas fa-pencil-alt mr-1"></i> Chỉnh sửa thông tin
                         </a>
-                        <a href="../Auth/logout.php" class="btn btn-secondary">
+                        <a href="../auth/logout.php" class="btn btn-secondary">
                             <i class="fas fa-sign-out-alt mr-1"></i> Đăng xuất
                         </a>
                     </div>
